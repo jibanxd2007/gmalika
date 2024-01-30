@@ -1,0 +1,148 @@
+<html><head><link href="../../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../../../assets/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+<link href="../../../assets/css/theme.css" rel="stylesheet">
+<style>
+body {
+    overflow:hidden;
+    
+}
+</style>
+ 
+
+</head><body><div id="buy-now" class="preview__actions">
+<div class="container">
+	<div class="row">
+	<div class="col-md-6">
+	
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	</div>
+</div>
+	
+	
+</div>
+<iframe style="overflow:hidden" src="../../../themes/export001/index.html" height="100%" width="100%" title="Iframe Example"></iframe>
+
+
+<div class="modal fade popup-login product-enq" id="BuyNowEnq" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="container">
+        
+			<div class="popup-login-items">
+				<div class="popup-login-items-inner">
+
+					<h3>Theme Enquiry</h3>
+					<a href="#" class="enq-closed" data-dismiss="modal">X</a>
+					<form action="#" class="form-login" name="prodenq_form" id="prodenq_form">
+						<div class="row">
+						    
+						  <div class="col-md-12">
+								<div class="form-group">
+								<input class="form-control" type="text" name="prod_name" id="prod_name" value="Responsive Export Template" readonly="">
+								<input class="form-control" type="hidden" name="product_id" id="product_id" value="45" readonly="">
+								<input class="form-control" type="hidden" name="product_code" id="product_code" value="ST-EXPORT001" readonly="">
+								</div>
+							</div>
+						  							<div class="col-md-12">
+								<div class="form-group">
+								<input class="form-control" type="text" name="full_name" id="full_name" placeholder="Enter Your Name" required="">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group"><input class="form-control" type="text" name="email" id="email" placeholder="Enter Your Email" required=""></div>
+							</div>
+							<div class="clear"></div>
+							 <div class="col-md-12">
+								<div class="form-group"><input class="form-control" type="text" name="mobile" id="mobile" pattern="[1-9]{1}[0-9]{9}" placeholder="Enter Your 10-digit Mobile Number" required=""></div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group"><input class="form-control" type="text" placeholder="Enter Your Address" name="address" id="address" required=""></div>
+							</div>
+							<div class="clear"></div>
+							
+							<div class="col-md-6">
+								<div class="form-group"><input class="form-control" type="text" placeholder="Enter City Name" name="city" id="city" required=""></div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group"><input class="form-control" type="text" placeholder="Enter Pincode" name="pincode" id="pincode" required=""></div>
+							</div>
+							<div class="clear"></div>
+							 <div class="col-md-12">
+								<div class="form-group"><input class="form-control" type="text" placeholder="Enter Country Name" name="country" id="country" required=""></div>
+							</div>
+							
+							 <div class="col-md-12">
+								<div class="form-group"><input class="form-control" type="text" placeholder="Enter Organization Name" name="organization" id="organization" required=""></div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group"><textarea class="form-control" type="text" placeholder="Enter Message" name="message" id="message" required=""></textarea></div>
+							</div>
+							<div class="clear"></div>
+							
+							<div class="col-md-offset-3 col-md-6">
+								<button class="btn btn-theme btn-block btn-theme-green" type="button" name="btnProductEnqForm" id="btnProductEnqForm">Submit</button>
+							</div>
+							<!--div class="col-md-6">
+								<a href="#" class="btn btn-theme btn-block btn-theme-dark" data-dismiss="modal">Close</a>
+							</div-->
+						</div>
+					</form>
+
+				</div>
+				<div class="alert alert-success" style="display:none;"></div>
+			<div class="alert alert-danger" style="display:none;"></div>
+			</div>
+
+		</div>
+	</div>
+</div>
+		  <script src="../../../assets/plugins/jquery/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../../assets/js/jquery-1.11.3.min.js"></script>
+        <script src="../../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../../assets/js/jquery.validate.min.js"></script>
+
+		<script src="../../../assets/js/custom_validations.js"></script>
+		<script src="../../../assets/js/backjs.js"></script>
+		 <script>
+		    $("#btnProductEnqForm").click(function() { 	
+    	 var prodenq_form = $("#prodenq_form").valid(); 
+    	 if(prodenq_form) {
+			  var formData = new FormData(document.getElementById("prodenq_form")); 
+		    $.ajax({
+		        type: 'POST',
+		        url: "https://No3yTk2Y65xG.org/Front/productEnquiry",
+		        data:formData,
+		        contentType: false,
+		        processData: false, 
+				cache:false,
+				async:false,
+		        success: function(data){
+		           //alert(data);
+					if(data=="success")
+					{
+						$('.alert-success').fadeIn().html("Submitted Successfully.");	
+						  setTimeout(function(){  
+							location.reload();	
+						  }, 3000);
+							
+					}
+					else
+					{
+						$('.alert-danger').html("Something Wents Wrong").fadeIn('slow');
+						  setTimeout(function(){  
+							location.reload();	
+						  }, 3000);
+					}
+		        }
+		      
+		       });
+    	}
+    });
+		</script>
+		
+        
+			</body></html>
+			

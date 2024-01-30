@@ -1,0 +1,150 @@
+
+@media (min-width: 1920px) {
+
+.quote-details {
+    padding: 12% 30% 12% 10%;
+}
+.company-faq {
+    padding: 12% 10% 12% 30%;
+}	
+.client-details {
+    padding: 12% 10% 12% 30%;
+}
+	
+.company-content{
+
+	padding: 12% 30% 12% 10%;
+}
+	
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {	
+
+    .logo h3{
+        font-size: 33px;
+    }
+    .main-menu ul.navbar-nav > li >a{
+        margin: 0px 6px;
+            font-size: 17px;
+    }
+    .joindiv{
+        display: none;
+    }
+     
+}
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .joindiv{
+        display: none;
+    } 
+    .main-menu ul.navbar-nav > li >a{
+            margin: 0px 6px;
+    }
+    .beand-bg{
+        right:0px;
+        position:relative;
+        width:100%;
+        height:auto;
+    }
+}
+ @media (min-width: 1200px){
+.container {
+    width: 1200px;
+}  
+
+}
+    
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .cal-bmi{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .logo h3{
+        font-size: 19px;
+    }
+    .abt-2{
+        display: none;
+    }
+    .abt-desc {
+        margin-left:0px;
+    }
+    .abt-desc h2{
+            font-size: 31px;
+    }
+    .main-slider h2{
+        font-size: 40px;
+    }
+    .testi-bmi{
+        margin-left: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        padding: 25px 40px;
+    }
+    .main-menu ul{
+        display: inline-grid;
+        text-align: center;
+        width: 100%;
+    }
+    .section {
+        padding: 30px 0px;
+    }
+    .section-title-dark h1 {
+        font-size: 30px;
+    }
+    .section-title-light h1 {
+        font-size: 30px;
+    }
+    .footer-copyright{
+        text-align: center;
+    }
+    .footer-icons {
+        float: none;
+    }
+    .ser-box{
+        text-align: center;
+    }
+    .ser-title img{
+        float: none;
+    }
+    .beand-bg{
+        right:0px;
+        position:relative;
+        width:100%;
+        height:auto;
+    }
+    .testimonial{
+        text-align: center;
+        background: #000000cf;
+        padding: 40px 20px;
+        margin: 30px 30px;
+    }
+    .joindiv{
+        display: none;
+    }
+    
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+.layer-1-2 h1 {
+    font-size: 24px;
+    line-height: 32px;
+}
+.intro-area-4 .layer-1-2 h1 {
+    font-size: 24px;
+    line-height: 32px;
+}
+ .service-content h4 {
+    font-size: 16px;
+} 
+.breadcrumb .section-headline h3 {
+    font-size: 34px;
+}	
+.project-area .container-full .section-headline p {
+    max-width: 360px;
+}	  
+}
+ 
